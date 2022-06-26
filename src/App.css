@@ -3,6 +3,14 @@
   height:100%;
   background-color: beige;
   font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.item-title{
+  font-size: 24px;
+  font-weight: bold;
+  color: #2E406F;
+  margin-left: 20px;
+  
 }
 .topBanner{
   width:100%;
@@ -14,6 +22,7 @@
   align-items: center;
   justify-content: center;
   color: lightgrey;
+  margin-bottom: 10px;
 }
 .title-left{
   display: flex;
@@ -45,6 +54,24 @@
   height:130px;
   color: lightgrey;
   font-size: 14px;
+}
+.skill-area{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 220px;
+  width:100%;
+}
+.skill-item{
+  height: auto;
+  margin-top: 5px;
+  width: 30%;
+}
+.skill-item-name{
+  border-bottom: #2c3e50 2px solid;
+  font-size: 20px;
+  color: darkslategrey;
+  margin-bottom: 5px;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

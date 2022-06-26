@@ -27,7 +27,34 @@ function App() {
           </div>
         </div>
       </div>
+      <span className='item-title'>技能 SKILL</span>
+      <div className='skill-area'>
+        <div className='skill-item'>
+          <div className='skill-item-name'>Front-End</div>
+          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>Javascript</li>
+          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>HTML5</li>
+          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>CSS/SCSS</li>
+          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>Vuejs</li>
+          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>React</li>
+          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>React Native</li>
+          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>C#</li>
+        </div>
+        <div className='skill-item'>
+          <div className='skill-item-name'>Back-End</div>
+          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>Nodejs</li>
+          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>Python</li>
+          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>MS-SQL</li>
+          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>Postgres</li>
+          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>MongoDB</li>
+        </div>
+        <div className='skill-item'>
+          <div className='skill-item-name'>Tool</div>
+          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>GitHub</li>
+          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>SVN</li>
+        </div>
+      </div>
     </div>
+
   );
 }
 
