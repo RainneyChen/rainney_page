@@ -1,7 +1,14 @@
 
 import './App.css';
-
+import ExperienceList from './components/ExperienceList.js'
 function App() {
+  
+  const workExpList = joblist.map((job,idx)=>{
+    return <ExperienceList key={job.date} number={idx+1} content={job}/>
+  });
+  const educationList = edulist.map((edu,idx)=>{
+    return <ExperienceList key={edu.date} number={idx+1} content={edu}/>
+  });
   return (
     <div className="App">
       <div className='topBanner'>
@@ -13,8 +20,8 @@ function App() {
           <div className='mail'>Senior Software Engineer</div>
           <div className='mail'>
             <div style={{'display':'flex','flexDirection':'row','alignItem':'center','height':'16px','marginTop':'10px'}}>
-            <img src={process.env.PUBLIC_URL +"/img/icon_location.png"} style={{'width':'16px','height':'16px','marginRight':'5px'}} alt="mail to me"/>
-            <div>Taoyuan City, Taiwan</div>
+              <img src={process.env.PUBLIC_URL +"/img/icon_location.png"} style={{'width':'16px','height':'16px','marginRight':'5px'}} alt="mail to me"/>
+              <div>Taoyuan City, Taiwan</div>
             </div>
           </div>
           
@@ -57,9 +64,41 @@ function App() {
           <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>SVN</li>
         </div>
       </div>
+      <span className='item-title'>工作經歷 EXPIERENCE</span>
+      <div style={{'width':'97%','height':'1px','borderBottom': '#2c3e50 2px solid','marginLeft':'20px'}}></div>
+      <div className='exprience-area'>
+        {workExpList}
+      </div>
+      <span className='item-title'>學歷 EDUCATION</span>
+      <div style={{'width':'97%','height':'1px','borderBottom': '#2c3e50 2px solid','marginLeft':'20px'}}></div>
+      <div className='exprience-area'>
+        {educationList}
+      </div>
     </div>
 
   );
 }
-
+const joblist = [{titleName:'Advantech AiCS, Senior Software Enginee, Taoyuan, Taiwan', date:'July 2015 - Present',
+  detail:['Develop mobile application using React-Native.',
+  'Develop web using Reactjs or Vuejs.', 
+  'Design and create Winform UI application by using C#.',
+  'Maintain Web page and web server by using Python and Apache',
+  'Design and create Intelligent Dashboard for nursing station by using knockout.js',
+  'Create RESTful API by using node.js and MongoDB.']},
+  {titleName:'ClearDent, Technical Support and Marketing, Canada, BC', date:' Feb. 2014 - May 2014',
+  detail:['Help client to resolve their problem of software.',
+  'Design company website.', 
+  'Design windows form application.']},
+  {titleName:'RADEN Technology Corporation, Software Programmer, Taipei, Taiwan', date:'Jan 2009 - Sep 2013',
+  detail:['Design and create function of dental software by using VS C# and MS-SQL.',
+  'Design Crystal Report in C#.', 
+  'Resolve the existed problem that required from dental offices.']}
+  ];
+const edulist =[{titleName:'Tzu Chi University, Master, Taiwan, Hualien', date:'July 2007 - July 2008',
+detail:['Deparment: Science in Medical Information.',
+'Training: Did a research of Neural Network Analysis Applied to Tumor Segmentation on 3D Breast Ultrasound Images and be a poster to present this research in conference of 2008 IEEE International Symposium on Biomedical Imaging: From Nano to Macro in France.']},
+{titleName:'Tzu Chi University, Bachelor, Taiwan, Hualien', date:'July 2007 - July 2008',
+ detail:['Deparment: Science in Medical Information.',
+ 'Training: Develop a system of Nursing Treatment plan system cooperatively with Mennonite Christian Hospital.']}
+];
 export default App;
