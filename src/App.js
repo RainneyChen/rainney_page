@@ -41,64 +41,130 @@ function App() {
       <span className='item-title'>技能 SKILL</span>
       <div className='skill-area'>
         <div className='skill-item'>
-          <div className='skill-item-name'>Front-End</div>
-          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>Javascript</li>
-          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>HTML5</li>
-          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>CSS/SCSS</li>
-          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>Vuejs</li>
-          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>React</li>
-          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>React Native</li>
-          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>C#</li>
+              <div className='skill-item-name'>Front-End</div>
+              <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>Javascript</li>
+              <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>HTML5</li>
+              <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>CSS/SCSS</li>
+              <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>Vuejs</li>
+              <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>React</li>
+              <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>React Native</li>
+              <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>C#</li>
         </div>
         <div className='skill-item'>
-          <div className='skill-item-name'>Back-End</div>
-          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>Nodejs</li>
-          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>Python</li>
-          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>MS-SQL</li>
-          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>Postgres</li>
-          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>MongoDB</li>
+              <div className='skill-item-name'>Back-End</div>
+              <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>Nodejs</li>
+              <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>Python</li>
+              <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>MS-SQL</li>
+              <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>Postgres</li>
+              <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>MongoDB</li>
         </div>
         <div className='skill-item'>
-          <div className='skill-item-name'>Tool</div>
-          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>GitHub</li>
-          <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>SVN</li>
+              <div className='skill-item-name'>Tool</div>
+              <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>GitHub</li>
+              <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>SVN</li>
+        </div>
+      </div>    
+      <div class="content">
+          <div style={{'width':'50%'}}>
+            <span className='item-title'>工作經歷 EXPIERENCE</span>
+            <div style={{'width':'97%','height':'1px','borderBottom': '#2c3e50 2px solid','marginLeft':'20px'}}></div>
+            <div className='exprience-area'>
+              {workExpList}
+            </div>
+          </div>
+          <div style={{'width':'50%'}}>
+            <span className='item-title'>學歷 EDUCATION</span>
+            <div style={{'width':'97%','height':'1px','borderBottom': '#2c3e50 2px solid','marginLeft':'20px'}}></div>
+            <div className='exprience-area'>
+              {educationList}
+            </div>          
+          </div>
+      </div>
+      <span className='item-title'>專案作品</span>
+      <div style={{'width':'97%','height':'1px','borderBottom': '#2c3e50 2px solid','marginLeft':'20px'}}></div>
+      <div className="project-area">
+        <div className="pimg-div">
+          <img className="project-img" src={process.env.PUBLIC_URL + '/img/project_12.png'} alt="myproject2"/>
+        </div>
+        <div  className='project-desc'>
+          <span className="project-name">聽見孩子的聖誕心願 (家扶X錠律基金會外包案)</span>
+          <div>
+            <a href="https://github.com/RainneyChen/christmas_wish"><img src={process.env.PUBLIC_URL +"/img/icon_github.png"} style={{'width':'20px','height':'20px'}} alt="Link my Linkedin" /></a>
+          </div>
+          <div style={{'marginTop':'5px','fontSize':'16px','fontWeight':'bold'}}>專案說明</div>
+          <div>使用GoDaddy架設此一頁式網站，使用javacript、jQuey、boostrap，製作RWD網頁，並使其能夠在手機上也能瀏覽無礙。<br/>
+          協助這些弱勢家庭兒童，透過許願，讓使用者透過點選聖誕樹上的禮物，進而導向禮物捐贈頁，進行認購，完成他們的心願；聖誕樹會根據
+          禮物的認領率，慢慢一層層的亮燈，直到所有禮物接任領完成，就會點亮最上方的星星。網站除了首頁外，還有其他四個頁面，上方有進入錨點，
+          點擊即可向下捲動至該頁。
+          </div>
+          <div style={{'marginTop':'5px','fontSize':'16px','fontWeight':'bold'}}>專案實作心得</div>
+          <div>此專案是我第一次從架站開始，從尋找相關架站空間和平台，到網頁整個製作，都由自己一手包辦，也從中獲得與以往都是架在單純網內環境的不同經驗；
+          與業者和UI設計師溝通協調，還有將網頁運用在手機上的顯示，都是一次很特別的經驗。另外，此次完全沒有後端開發架設，因此也特別製作一簡單網頁連結文字檔，
+          方便業者統計，計算禮物。因為這個網站的目的也相當不同，看著聖誕樹一天天被點亮，除了很有成就感之外，也覺得自己幫助到這些弱勢家庭的兒童，一步步地完成
+          他們小小的心願。
+          </div>
         </div>
       </div>
-      <span className='item-title'>工作經歷 EXPIERENCE</span>
-      <div style={{'width':'97%','height':'1px','borderBottom': '#2c3e50 2px solid','marginLeft':'20px'}}></div>
-      <div className='exprience-area'>
-        {workExpList}
-      </div>
-      <span className='item-title'>學歷 EDUCATION</span>
-      <div style={{'width':'97%','height':'1px','borderBottom': '#2c3e50 2px solid','marginLeft':'20px'}}></div>
-      <div className='exprience-area'>
-        {educationList}
+      <div style={{'marginTop':'20px'}}></div>
+      <div className="project-area">
+        <div className="pimg-div">
+          <img className="project-img" src={process.env.PUBLIC_URL + '/img/iward.png'} alt="myproject2"/>
+        </div>
+        <div  className='project-desc'>
+          <span className="project-name">智慧病房－電子白板</span>
+          <div>
+            <a href="https://drive.google.com/file/d/0B4aNhyjxOoigM09nMU5TcEx4eEk/view?usp=sharing&resourcekey=0-oUUZw7QkGzyXyMYplCwQVA"><img src={process.env.PUBLIC_URL +"/img/icon_ppt.png"} style={{'width':'20px','height':'20px'}} alt="Link my Linkedin" /></a>
+          </div>
+          <div style={{'marginTop':'5px','fontSize':'16px','fontWeight':'bold'}}>專案說明</div>
+          <div>使用javascript結合Knockout.js框架開發醫院護理站電子白板，顯示護理站的病床即時動態，護理排班．．．．．．等相關照護資訊。且因為不同案場，對於顯示
+            都有不同需求，因此設計整個網頁架構，可以透過設定檔，或後台組態派送來並更版型和顯示資料內容，已達成各種不同需求；另外，也提供簡易的方式，可以快速地內
+            嵌其他網頁，讓他在看板上以方夜行是顯示。<br/>
+          此外，在此專案開發時也有協助使用nodejs結合MongoDB的後端API的開發及維護工作，並負責打包發版工作。另外，也負責資料的介接程式撰寫，使用C# winform程式，
+          將醫院資料倒入到智慧病房系統中。
+          </div>
+          <div style={{'marginTop':'5px','fontSize':'16px','fontWeight':'bold'}}>專案實作心得</div>
+          <div>因為使用端為醫院場域，所以其環境封閉性相對較高且嚴格，其中必須克服許多偵錯及網路環境問題，和使用者大多數對電腦相關使用並不熟悉的問題；此外，因為每
+            個案場需求都不盡相同，因此網頁內容也需要更多彈性，來解實作各種要求，因此讓程式更加模組化，套件化，也是這個專案的重要課題。
+          </div>
+        </div>
       </div>
     </div>
-
   );
 }
-const joblist = [{titleName:'Advantech AiCS, Senior Software Enginee, Taoyuan, Taiwan', date:'July 2015 - Present',
-  detail:['Develop mobile application using React-Native.',
-  'Develop web using Reactjs or Vuejs.', 
-  'Design and create Winform UI application by using C#.',
-  'Maintain Web page and web server by using Python and Apache',
-  'Design and create Intelligent Dashboard for nursing station by using knockout.js',
-  'Create RESTful API by using node.js and MongoDB.']},
-  {titleName:'ClearDent, Technical Support and Marketing, Canada, BC', date:' Feb. 2014 - May 2014',
-  detail:['Help client to resolve their problem of software.',
-  'Design company website.', 
-  'Design windows form application.']},
-  {titleName:'RADEN Technology Corporation, Software Programmer, Taipei, Taiwan', date:'Jan 2009 - Sep 2013',
-  detail:['Design and create function of dental software by using VS C# and MS-SQL.',
-  'Design Crystal Report in C#.', 
-  'Resolve the existed problem that required from dental offices.']}
+const joblist = [{titleName:'研華智誠股份有限公司, 資深軟體工程師, 台灣, 桃園', date:'2015年7月- 現在仍在職',
+  logo:'/img/icon_advantech.png',
+  detail:['react 和 vue.js 串接RESTful API開發網頁前端開發產品。',
+  '使用 Redux in react-native串接API開發Android和IOS手機APP的經驗。', 
+  '使用Visual Studio C#進行軟體開發、設計及維護。',
+  '使用javascript搭配knockout.js進行網頁前端開發實做。',
+  '使用Apache搭配Python33設計開發及維護網路後端程式。',
+  'node.js搭配mogodb實做RESTful API。',
+  '具備PostgreSQL使用經驗。',
+  '具備html、css開發經驗。',
+  '具備PowerBI使用經驗。',
+  '具備PHP with smarty 網頁開發經驗。'
+  ]},
+  {titleName:'ClearDent, 技術資源和行銷, 加拿大, 卑斯省', date:'2014年2月 - 2014年5月',
+  logo:'/img/cleardent.png',
+  detail:['協助客戶解決軟體上技術問題',
+  '設計，開發公司網頁', 
+  '設計，開發應用程式']},
+  {titleName:'諾盾科技, 軟體工程師,  台灣, 台北', date:'2009年1月 - 2013年9月',
+  logo:'/img/cd_chinese.jpg',
+  detail:['使用VS C# and MS-SQL設計、開發牙醫軟體及系統維護。',
+  'CrystalReport設計。', 
+  '協助客戶轉移系統及資料轉換。',
+  '軟體與資料庫整合應用。',
+  'Visual Studio C#程式撰寫。'
+]}
   ];
-const edulist =[{titleName:'Tzu Chi University, Master, Taiwan, Hualien', date:'July 2007 - July 2008',
-detail:['Deparment: Science in Medical Information.',
-'Training: Did a research of Neural Network Analysis Applied to Tumor Segmentation on 3D Breast Ultrasound Images and be a poster to present this research in conference of 2008 IEEE International Symposium on Biomedical Imaging: From Nano to Macro in France.']},
-{titleName:'Tzu Chi University, Bachelor, Taiwan, Hualien', date:'July 2007 - July 2008',
- detail:['Deparment: Science in Medical Information.',
- 'Training: Develop a system of Nursing Treatment plan system cooperatively with Mennonite Christian Hospital.']}
+const edulist =[{titleName:'私立慈濟大學, 碩士, 台灣, 花蓮', date:'2007年7月 - 2008年7月',
+logo:'/img/icon_tzu.png',
+detail:['科系: 醫學資訊所',
+'研究: 應用類神經網路在三維乳房超音波影像腫瘤之切割 ']},
+{titleName:'私立慈濟大學, 學士, 台灣, 花蓮', date:'2003年9月 - 2007年6月',
+  logo:'/img/icon_tzu.png',
+ detail:['科系: 醫學資訊學系',
+ '專題: 與門諾醫院合作開發之護理計畫系統']}
 ];
 export default App;

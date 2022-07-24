@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 function ExperienceList(props) {
   const [number] = useState(props.number);
   const [content] = useState(props.content);
@@ -14,7 +15,7 @@ function ExperienceList(props) {
         </div>
         <div style={style.titleName}>{content.titleName+", "+content.date}</div>
       </div>
-      <div style={style.detail}>
+      <div className="detail" style={style.detail}>
         <div style={{'marginLeft':'30px','paddingTop':'10px','paddingBottom':'10px'}}>{detailArr}</div>
       </div>
     </div>
@@ -45,9 +46,32 @@ const style = {
     'marginLeft':'10px'
   },
   detail:{
+    'display':'flex',
+    'flexDirectory':'row',
     'borderLeft': '2px solid #A8A8A8',
     'height':'auto',
-    'marginLeft':'13px'
+    'marginLeft':'13px',
+    'marginRight':'50px',
+    'alignItems':'center',
+    'justifyContent': 'space-between'
+  },
+  frame :{  
+    'display':'flex',
+    'height': '80px',/*can be anything*/
+    'width': '310px',/*can be anything*/
+    'alignItems':'center'
+  },
+  img :{  
+    'flex':'1',
+    'alignSelf':'center',
+    'height': '50px',/*can be anything*/
+    'width': 'auto',
+      /*'position': 'absolute', 
+      'top': '0', 
+      'bottom': '0', 
+      'left': '0', 
+      'right': '0', 
+      'margin': 'auto'*/
   }
 }
 export default ExperienceList;

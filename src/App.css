@@ -63,6 +63,12 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.content{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+
+}
 .skill-area{
   display: flex;
   flex-direction: row;
@@ -84,6 +90,43 @@
 .exprience-area{
   margin:5px 0 10px 20px;
   height: auto;
+}
+.project-area{
+  margin:5px 0 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  width: 97%;
+}
+.pimg-div{  
+  display:flex;
+  flex-direction: column;
+  height: auto;
+  align-items:center;
+  width:40%
+}
+.project-img {  
+  flex:1;
+  align-self:center;
+  height: auto;
+  width:100%;
+}
+.project-desc{
+  width:58%;
+  height: auto;
+  margin-left:10px;
+}
+.project-name{
+  font-size:20px;
+  color:darkslategrey;
+  font-weight:bold;
+}
+.project-detail{
+  margin-top: 5px;
+  font-size: 14px;
+  word-break: keep-all;
+  white-space:pre-wrap;
+  word-wrap: normal;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
