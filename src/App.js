@@ -87,7 +87,7 @@ function App() {
           <img className="project-img" src={process.env.PUBLIC_URL + '/img/project_12.png'} alt="myproject2"/>
         </div>
         <div  className='project-desc'>
-          <span className="project-name">聽見孩子的聖誕心願 (家扶X錠律基金會外包案)</span>
+          <span className="project-name">聽見孩子的聖誕心願 (家扶x錠律基金會外包案)</span>
           <div>
             <a href="https://github.com/RainneyChen/christmas_wish"><img src={process.env.PUBLIC_URL +"/img/icon_github.png"} style={{'width':'20px','height':'20px'}} alt="Link my Linkedin" /></a>
           </div>
@@ -108,7 +108,7 @@ function App() {
       <div style={{'marginTop':'20px'}}></div>
       <div className="project-area">
         <div className="pimg-div">
-          <img className="project-img" src={process.env.PUBLIC_URL + '/img/iward.png'} alt="myproject2"/>
+          <img className="project-img" src={process.env.PUBLIC_URL + "/img/iWard.png"} alt="myproject2"/>
         </div>
         <div  className='project-desc'>
           <span className="project-name">智慧病房－電子白板</span>
@@ -125,6 +125,28 @@ function App() {
           <div style={{'marginTop':'5px','fontSize':'16px','fontWeight':'bold'}}>專案實作心得</div>
           <div>因為使用端為醫院場域，所以其環境封閉性相對較高且嚴格，其中必須克服許多偵錯及網路環境問題，和使用者大多數對電腦相關使用並不熟悉的問題；此外，因為每
             個案場需求都不盡相同，因此網頁內容也需要更多彈性，來解實作各種要求，因此讓程式更加模組化，套件化，也是這個專案的重要課題。
+          </div>
+        </div>
+      </div>
+      <div style={{'marginTop':'20px'}}></div>
+      <div className="project-area">
+        <div className="pimg-div">
+          <img className="project-img" src={process.env.PUBLIC_URL + "/img/iWard.png"} alt="myproject2"/>
+        </div>
+        <div  className='project-desc'>
+          <span className="project-name">數位互動看板APP－SignageCMS</span>
+          <div style={{'display':'flex','flexDirection':'row'}}>
+            <a href="https://drive.google.com/file/d/0B4aNhyjxOoigM09nMU5TcEx4eEk/view?usp=sharing&resourcekey=0-oUUZw7QkGzyXyMYplCwQVA"><img src={process.env.PUBLIC_URL +"/img/icon_recording.png"} style={{'width':'20px','height':'20px'}} alt="App Demo" /></a>
+            <a href="https://apps.apple.com/tw/app/signagecms-m/id1397150525"><img src={process.env.PUBLIC_URL +"/img/icon_app-store.png"} style={{'width':'20px','height':'20px','marginLeft':'5px'}} alt="download from app store" /></a>
+            <a href="https://play.google.com/store/apps/details?id=com.immapp&hl=zh_TW&gl=US"><img src={process.env.PUBLIC_URL +"/img/icon_google-play.png"} style={{'width':'20px','height':'20px','marginLeft':'5px'}} alt="download from google play store" /></a>
+          </div>
+          <div style={{'marginTop':'5px','fontSize':'16px','fontWeight':'bold'}}>專案說明</div>
+          <div>使用React-Native開發的跨平台手機APP程式。透過手機上傳檔案，選擇想要的排列方式，設定解析度大小，進行節目立即或預約派播；也可以同是對多點進行
+            批次派播。此外，更能利用手機對原本已派播的節目進行插播，或是透過手機進行簡報等操作。
+          </div>
+          <div style={{'marginTop':'5px','fontSize':'16px','fontWeight':'bold'}}>專案實作心得</div>
+          <div>這是一款需要與Client端電腦應用程式互動的手機APP，需要同時與Client端開發者密切溝通與合作；且因為是跨平台手機應用程式，需要根據不同手機廠牌或解析度
+            做適應性調整。<br/>這個手機APP雖然不是我第一個使用 React-Native開發的跨平台App程式，但卻是第一個開發較為完整的APP，也是在此次學習APP上架等相關操作，在一項項關卡突破時，得到滿滿的成就感。
           </div>
         </div>
       </div>
