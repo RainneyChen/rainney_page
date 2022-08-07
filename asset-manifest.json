@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/rainney_page/static/css/main.6ca6ca48.css",
-    "main.js": "/rainney_page/static/js/main.9d07ec75.js",
+    "main.js": "/rainney_page/static/js/main.28e96cd6.js",
     "static/js/787.f902a82f.chunk.js": "/rainney_page/static/js/787.f902a82f.chunk.js",
     "index.html": "/rainney_page/index.html",
     "main.6ca6ca48.css.map": "/rainney_page/static/css/main.6ca6ca48.css.map",
-    "main.9d07ec75.js.map": "/rainney_page/static/js/main.9d07ec75.js.map",
+    "main.28e96cd6.js.map": "/rainney_page/static/js/main.28e96cd6.js.map",
     "787.f902a82f.chunk.js.map": "/rainney_page/static/js/787.f902a82f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6ca6ca48.css",
-    "static/js/main.9d07ec75.js"
+    "static/js/main.28e96cd6.js"
   ]
 }
