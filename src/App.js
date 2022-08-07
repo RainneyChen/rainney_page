@@ -33,8 +33,8 @@ function App() {
           資訊社會來臨，每個人都需要與時俱進才能跟上時代潮流，進而開創新局面；因為對程式撰寫頗具興趣，加上喜歡學習不同新的事物，所以在學時對多種程式語言皆有初步的認識以及學習，培養良好的程式基礎，使我在職場上很有自信。另外，除了程式的撰寫上，也對醫學相關資是有基礎的瞭解，在大學期間也曾與醫院合作過護理計畫系統，在研究所的研究從事有關醫學影像的研究，藉由前三分工作，也有相當豐富的專案開發經驗與專業程式能力，相信未來不論是要面對新的系統開發工具，或是新的工作領域，我都能更快的上手，將其經驗做有效的發揮，並且更加精進。
           </p>
           <div>
-          <a href="mailto:myemailaddress@gmail.com"><img src={process.env.PUBLIC_URL +"/img/icon_mail.png"} style={{'width':'20px','height':'20px','marginRight':'5px'}} alt="mail to me"/></a>
-            <a href="https://www.linkedin.com/in/rainney"><img src={process.env.PUBLIC_URL +"/img/icon_linkedin.png"} style={{'width':'20px','height':'20px'}} alt="Link my Linkedin" /></a>
+          <a href="mailto:myemailaddress@gmail.com" title="請跟我聯絡"><img src={process.env.PUBLIC_URL +"/img/icon_mail.png"} style={{'width':'20px','height':'20px','marginRight':'5px'}} alt="mail to me"/></a>
+            <a href="https://www.linkedin.com/in/rainney" title="我的Linkedin"><img src={process.env.PUBLIC_URL +"/img/icon_linkedin.png"} style={{'width':'20px','height':'20px'}} alt="Link my Linkedin" /></a>
           </div>
         </div>
       </div>
@@ -64,7 +64,7 @@ function App() {
               <li style={{'lineHeight':'24px','paddingLeft':'5px'}}>SVN</li>
         </div>
       </div>    
-      <div class="content">
+      <div className="content">
           <div style={{'width':'50%'}}>
             <span className='item-title'>工作經歷 EXPIERENCE</span>
             <div style={{'width':'97%','height':'1px','borderBottom': '#2c3e50 2px solid','marginLeft':'20px'}}></div>
@@ -89,7 +89,7 @@ function App() {
         <div  className='project-desc'>
           <span className="project-name">聽見孩子的聖誕心願 (家扶x錠律基金會外包案)</span>
           <div>
-            <a href="https://github.com/RainneyChen/christmas_wish"><img src={process.env.PUBLIC_URL +"/img/icon_github.png"} style={{'width':'20px','height':'20px'}} alt="Link my Linkedin" /></a>
+            <a href="https://github.com/RainneyChen/christmas_wish" title="Git 連結"><img src={process.env.PUBLIC_URL +"/img/icon_github.png"} style={{'width':'20px','height':'20px'}} alt="Link my Linkedin" /></a>
           </div>
           <div style={{'marginTop':'5px','fontSize':'16px','fontWeight':'bold'}}>專案說明</div>
           <div>使用GoDaddy架設此一頁式網站，使用javacript、jQuey、boostrap，製作RWD網頁，並使其能夠在手機上也能瀏覽無礙。<br/>
@@ -113,12 +113,14 @@ function App() {
         <div  className='project-desc'>
           <span className="project-name">智慧病房－電子白板</span>
           <div>
-            <a href="https://drive.google.com/file/d/0B4aNhyjxOoigM09nMU5TcEx4eEk/view?usp=sharing&resourcekey=0-oUUZw7QkGzyXyMYplCwQVA"><img src={process.env.PUBLIC_URL +"/img/icon_ppt.png"} style={{'width':'20px','height':'20px'}} alt="Link my Linkedin" /></a>
+            <a href="https://drive.google.com/file/d/0B4aNhyjxOoigM09nMU5TcEx4eEk/view?usp=sharing&resourcekey=0-oUUZw7QkGzyXyMYplCwQVA" title="點我看詳細介紹">
+              <img src={process.env.PUBLIC_URL +"/img/icon_ppt.png"} style={{'width':'20px','height':'20px'}} alt="Link my Linkedin" />
+            </a>
           </div>
           <div style={{'marginTop':'5px','fontSize':'16px','fontWeight':'bold'}}>專案說明</div>
           <div>使用javascript結合Knockout.js框架開發醫院護理站電子白板，顯示護理站的病床即時動態，護理排班．．．．．．等相關照護資訊。且因為不同案場，對於顯示
             都有不同需求，因此設計整個網頁架構，可以透過設定檔，或後台組態派送來並更版型和顯示資料內容，已達成各種不同需求；另外，也提供簡易的方式，可以快速地內
-            嵌其他網頁，讓他在看板上以方夜行是顯示。<br/>
+            嵌其他網頁，讓他在看板上以分頁方式顯示。<br/>
           此外，在此專案開發時也有協助使用nodejs結合MongoDB的後端API的開發及維護工作，並負責打包發版工作。另外，也負責資料的介接程式撰寫，使用C# winform程式，
           將醫院資料倒入到智慧病房系統中。
           </div>
@@ -126,19 +128,48 @@ function App() {
           <div>因為使用端為醫院場域，所以其環境封閉性相對較高且嚴格，其中必須克服許多偵錯及網路環境問題，和使用者大多數對電腦相關使用並不熟悉的問題；此外，因為每
             個案場需求都不盡相同，因此網頁內容也需要更多彈性，來解實作各種要求，因此讓程式更加模組化，套件化，也是這個專案的重要課題。
           </div>
+          <div style={{"display":"flex","flexDirection":"row","marginTop":"10px"}}>
+          <div style={{'marginTop':'5px','fontSize':'16px','fontWeight':'bold',"marginRight":"20px"}}>備註：此專案也獲得［第十四屆國家創新獎］的殊榮</div>
+          <a href="https://drive.google.com/file/d/18YWyFkN6xp8mZDngWQK5ScD0iH9MjZTX/view?usp=sharing" title="點我看證書">
+            <img src={process.env.PUBLIC_URL +"/img/certificate.png"} style={{'width':'40px','height':'40px'}} alt="iWard certificate" />
+          </a>
+          </div>
         </div>
       </div>
       <div style={{'marginTop':'20px'}}></div>
       <div className="project-area">
         <div className="pimg-div">
-          <img className="project-img" src={process.env.PUBLIC_URL + "/img/iWard.png"} alt="myproject2"/>
+          <img className="project-img" src={process.env.PUBLIC_URL + "/img/inception.png"} alt="myproject2"/>
+        </div>
+        <div  className='project-desc'>
+          <span className="project-name">智慧巡檢</span>
+          <div>
+            <a href="https://drive.google.com/file/d/1p8uNpVY5yus_8S79GbyIqZJXENLYZwOx/view?usp=sharing" title="點我看網頁操作影片">
+              <img src={process.env.PUBLIC_URL +"/img/icon_recording.png"} style={{'width':'20px','height':'20px'}} alt="Link my Linkedin" /></a>
+          </div>
+          <div style={{'marginTop':'5px','fontSize':'16px','fontWeight':'bold'}}>專案說明</div>
+          <div>使用javascript結合Vuejs框架開發智慧巡檢，讓使用者可以透過網頁完成一些客製化巡檢設定，使用權限管理外，也可以讓使用者透過網頁去看到各門店巡檢的情況，
+            給予詳細的巡檢細項報表，還可以透過遠端攝影機，進行遠程巡檢，遠端對門店進行檢核，達到有效的門店管理。
+          </div>
+          <div style={{'marginTop':'5px','fontSize':'16px','fontWeight':'bold'}}>專案實作心得</div>
+          <div>這個案子是我第一次接觸Vuejs框架的網頁設計案，雖然不是一切重頭開始實作，但因為網頁改版關係，整個介面做了非常大的改變與調整，某些功能架構也有了不小的調改；
+            除了先要先熟悉先前開發者的程式架構外，同時也要熟悉新的框架運用及寫法，還另外開發新統計介面功能；因為各使用者需求不同，所以在架構也較為複雜，加上，上線時間緊迫
+            ，需要在短短一個多月，要將專案完成，也承受不少時間壓力。但也因此從短短的時間，加速自己框架熟悉速度，善用自己的能力與經驗，盡力將案子做好。
+          </div>
+        </div>
+      </div>
+      <div style={{'marginTop':'20px'}}></div>
+      <div className="project-area">
+        <div className="pimg-div" style={{'flexDirection':'row'}}>
+          <img className="appproject-img" src={process.env.PUBLIC_URL + "/img/signage1.jpg"} alt="myproject2"/>
+          <img className="appproject-img" src={process.env.PUBLIC_URL + "/img/signage2.jpg"} alt="myproject2"/>
         </div>
         <div  className='project-desc'>
           <span className="project-name">數位互動看板APP－SignageCMS</span>
           <div style={{'display':'flex','flexDirection':'row'}}>
-            <a href="https://drive.google.com/file/d/0B4aNhyjxOoigM09nMU5TcEx4eEk/view?usp=sharing&resourcekey=0-oUUZw7QkGzyXyMYplCwQVA"><img src={process.env.PUBLIC_URL +"/img/icon_recording.png"} style={{'width':'20px','height':'20px'}} alt="App Demo" /></a>
-            <a href="https://apps.apple.com/tw/app/signagecms-m/id1397150525"><img src={process.env.PUBLIC_URL +"/img/icon_app-store.png"} style={{'width':'20px','height':'20px','marginLeft':'5px'}} alt="download from app store" /></a>
-            <a href="https://play.google.com/store/apps/details?id=com.immapp&hl=zh_TW&gl=US"><img src={process.env.PUBLIC_URL +"/img/icon_google-play.png"} style={{'width':'20px','height':'20px','marginLeft':'5px'}} alt="download from google play store" /></a>
+            <a href="https://apps.apple.com/tw/app/signagecms-m/id1397150525" title="點我下載iPhone App">
+              <img src={process.env.PUBLIC_URL +"/img/icon_app-store.png"} style={{'width':'20px','height':'20px','marginLeft':'5px'}} alt="download from app store" /></a>
+            <a href="https://play.google.com/store/apps/details?id=com.immapp&hl=zh_TW&gl=US" title="點我下載Android App"><img src={process.env.PUBLIC_URL +"/img/icon_google-play.png"} style={{'width':'20px','height':'20px','marginLeft':'5px'}} alt="download from google play store" /></a>
           </div>
           <div style={{'marginTop':'5px','fontSize':'16px','fontWeight':'bold'}}>專案說明</div>
           <div>使用React-Native開發的跨平台手機APP程式。透過手機上傳檔案，選擇想要的排列方式，設定解析度大小，進行節目立即或預約派播；也可以同是對多點進行
@@ -147,6 +178,27 @@ function App() {
           <div style={{'marginTop':'5px','fontSize':'16px','fontWeight':'bold'}}>專案實作心得</div>
           <div>這是一款需要與Client端電腦應用程式互動的手機APP，需要同時與Client端開發者密切溝通與合作；且因為是跨平台手機應用程式，需要根據不同手機廠牌或解析度
             做適應性調整。<br/>這個手機APP雖然不是我第一個使用 React-Native開發的跨平台App程式，但卻是第一個開發較為完整的APP，也是在此次學習APP上架等相關操作，在一項項關卡突破時，得到滿滿的成就感。
+          </div>
+        </div>
+      </div>
+      <div style={{'marginTop':'20px'}}></div>
+      <div className="project-area">
+        <div className="pimg-div" style={{'flexDirection':'row'}}>
+          <img className="appproject-img" src={process.env.PUBLIC_URL + "/img/storeBI1.jpg"} alt="myproject2"/>
+          <img className="appproject-img" src={process.env.PUBLIC_URL + "/img/storeBI2.jpg"} alt="myproject2"/>
+        </div>
+        <div  className='project-desc'>
+          <span className="project-name">營運分析APP－StoreBI</span>
+          <div style={{'display':'flex','flexDirection':'row'}}>
+            <a href="https://drive.google.com/file/d/1ZVRhDeJp67hkaEnYEziytqAILn1Au2K0/view?usp=sharing" title="點我看APP實際操作">
+              <img src={process.env.PUBLIC_URL +"/img/icon_recording.png"} style={{'width':'20px','height':'20px','marginLeft':'5px'}} alt="storeBI" /></a>
+          </div>
+          <div style={{'marginTop':'5px','fontSize':'16px','fontWeight':'bold'}}>專案說明</div>
+          <div>使用React-Native開發的跨平台手機APP程式。透過手機查看店家營收數據、人流分析數據、以及販賣品項數據及圖表分析。
+          </div>
+          <div style={{'marginTop':'5px','fontSize':'16px','fontWeight':'bold'}}>專案實作心得</div>
+          <div>這個手機APP，在功能面來說，算是功能比較單純的APP應用程式，主要功能幾乎都是利用時間選項，向雲端取得資料，再以圖表的形式來呈現。其中
+            比較大的挑戰和開發工作，大概就是在於如何實作出UI設計師設計美美的APP圖表畫面了(笑)。
           </div>
         </div>
       </div>
